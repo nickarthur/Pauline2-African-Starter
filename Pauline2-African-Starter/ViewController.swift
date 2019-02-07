@@ -13,30 +13,28 @@ import UIKit
 class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
     @IBOutlet var sceneView: ARSCNView!
 
-  fileprivate func printInfo(for node: SCNNode) {
-    
-    // first print out location of  the current node
-    print("**** \(node.name ?? "no name"): at local position: \(node.position)")
-    print("**** \(node.name ?? "no name"): at world position: \(node.worldPosition)")
-    
-    // print the node's parent name
-    print("**** \(node.name ?? "no name") parent: \(node.parent?.name ?? "no parent found")")
-    
-    // print out child node info
-    var nodeNames: [String] = []
-    for node in node.childNodes {
-      nodeNames.append(node.name ?? "no name")
-    }
-    print("**** \(node.name ?? "no name"): has \(node.childNodes.count == 1 ? " \(node.childNodes.count) child" : " \(node.childNodes.count) children"): \(nodeNames)")
-    
-    // recursive call to have children print out thier info
-    for node in node.childNodes {
-      printInfo(for: node)
+    fileprivate func printInfo(for node: SCNNode) {
+        // first print out location of  the current node
+        print("**** \(node.name ?? "no name"): at local position: \(node.position)")
+        print("**** \(node.name ?? "no name"): at world position: \(node.worldPosition)")
+
+        // print the node's parent name
+        print("**** \(node.name ?? "no name") parent: \(node.parent?.name ?? "no parent found")")
+
+        // print out child node info
+        var nodeNames: [String] = []
+        for node in node.childNodes {
+            nodeNames.append(node.name ?? "no name")
+        }
+        print("**** \(node.name ?? "no name"): has \(node.childNodes.count == 1 ? " \(node.childNodes.count) child" : " \(node.childNodes.count) children"): \(nodeNames)")
+
+        // recursive call to have children print out thier info
+        for node in node.childNodes {
+            printInfo(for: node)
+        }
     }
 
-  }
-  
-  override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
 
         // Set the view's delegate
@@ -48,7 +46,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
 
         // Create a new scene
         let scene = SCNScene(named: "art.scnassets/Bike.dae")!
-    
+
         // always name your scene root node
         scene.rootNode.name = "Bike SCNScene RootNode"
         printInfo(for: scene.rootNode)
@@ -67,8 +65,11 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
         sceneView.session.run(configuration)
 
         // where is the camera at start
-        let currentCameraPosition = sceneView.pointOfView?.position
-        print("**** Camera Position: \(String(describing: currentCameraPosition))")
+        if let currentCameraPosition = sceneView.pointOfView?.position {
+            print("**** Camera Position: \(currentCameraPosition)")
+        } else {
+            print("**** Camera Position: unknown")
+        }
     }
 
     override func viewWillDisappear(_ animated: Bool) {
