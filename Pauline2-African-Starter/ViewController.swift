@@ -38,7 +38,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
         sceneView.showsStatistics = true
 
         // Create a new scene
-        let scene = SCNScene(named: "art.scnassets/Bike.dae")!
+        let scene = SCNScene(named: "art.scnassets/SceneKit Scene.scn")!
 
         printInfo(for: scene.rootNode)
 
