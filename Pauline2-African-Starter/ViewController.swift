@@ -29,7 +29,15 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
         // always name your scene root node
         scene.rootNode.name = "Bike SCNScene RootNode"
         scene.rootNode.printInfo()
-
+      
+      if let poserSceneRootNode = scene.rootNode.childNode(withName: "PoserSceneRoot", recursively: true) {
+        poserSceneRootNode.worldPosition = SCNVector3(0, -200, -400)
+        
+        print("**** Poser Scene Moved To:")
+        scene.rootNode.printInfo()
+      }
+      
+      
         // Set the scene to the view
         sceneView.scene = scene
     }
