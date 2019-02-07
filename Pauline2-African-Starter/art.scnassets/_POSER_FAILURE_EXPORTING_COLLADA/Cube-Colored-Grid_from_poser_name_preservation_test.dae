@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+	<asset>
+		<contributor>
+			<authoring_tool>Poser 11.1.0.34759</authoring_tool>
+		</contributor>
+		<created>2019-02-05T21:44:41Z</created>
+		<modified>2019-02-05T21:44:41Z</modified>
+		<unit meter="0.009999999776482582" name="Centimeter"/>
+		<up_axis>Y_UP</up_axis>
+	</asset>
+	<library_geometries>
+		<geometry id="Colored_Grid_Cube_geometry">
+			<mesh>
+				<source id="Colored_Grid_Cube_geometry-positions">
+					<float_array id="Colored_Grid_Cube_geometry-positions-array" count="24">-50 -50 50 50 -50 50 -50 50 50 50 50 50 -50 50 -50 50 50 -50 -50 -50 -50 50 -50 -50</float_array>
+					<technique_common>
+						<accessor count="8" source="#Colored_Grid_Cube_geometry-positions-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="Colored_Grid_Cube_geometry-normals">
+					<float_array id="Colored_Grid_Cube_geometry-normals-array" count="24">-0.999755859375 0 0 1.00024402141571 0 0 -1.00024402141571 0 0 0.999755859375 0 0 -0.999755859375 0 0 0.999755859375 0 0 -0.999755859375 0 0 0.999755859375 0 0</float_array>
+					<technique_common>
+						<accessor count="8" source="#Colored_Grid_Cube_geometry-normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="Colored_Grid_Cube_geometry-uvs">
+					<float_array id="Colored_Grid_Cube_geometry-uvs-array" count="28">0.375 0 0.625 0 0.375 0.25 0.625 0.25 0.375 0.5 0.625 0.5 0.375 0.75 0.625 0.75 0.375 1 0.625 1 0.875 0 0.875 0.25 0.125 0 0.125 0.25</float_array>
+					<technique_common>
+						<accessor count="14" source="#Colored_Grid_Cube_geometry-uvs-array" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="Colored_Grid_Cube_geometry-vertices">
+					<input semantic="POSITION" source="#Colored_Grid_Cube_geometry-positions"/>
+				</vertices>
+				<polylist count="12">
+					<input offset="0" semantic="VERTEX" source="#Colored_Grid_Cube_geometry-vertices" set="0"/>
+					<input offset="1" semantic="NORMAL" source="#Colored_Grid_Cube_geometry-normals" set="0"/>
+					<input offset="2" semantic="TEXCOORD" source="#Colored_Grid_Cube_geometry-uvs" set="0"/>
+					<vcount>3 3 3 3 3 3 3 3 3 3 3 3</vcount>
+					<p>0 0 0 1 1 1 2 2 2 2 2 2 1 1 1 3 3 3 2 2 2 3 3 3 4 4 4 4 4 4 3 3 3 5 5 5 4 4 4 5 5 5 6 6 6 6 6 6 5 5 5 7 7 7 6 6 6 7 7 7 0 0 8 0 0 8 7 7 7 1 1 9 1 1 1 7 7 10 3 3 3 3 3 3 7 7 10 5 5 11 6 6 12 0 0 0 4 4 13 4 4 13 0 0 0 2 2 2</p>
+				</polylist>
+			</mesh>
+		</geometry>
+	</library_geometries>
+	<library_animations>
+		<animation id="Colored_Grid_CubexScale">
+			<source id="Colored_Grid_CubexScale-scaleX-input">
+				<float_array id="Colored_Grid_CubexScale-scaleX-input-array" count="1">0</float_array>
+				<technique_common>
+					<accessor count="1" source="#Colored_Grid_CubexScale-scaleX-input-array">
+						<param name="TIME" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="Colored_Grid_CubexScale-scaleX-output">
+				<float_array id="Colored_Grid_CubexScale-scaleX-output-array" count="1">1</float_array>
+				<technique_common>
+					<accessor count="1" source="#Colored_Grid_CubexScale-scaleX-output-array">
+						<param name="ScX" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="Colored_Grid_CubexScale-scaleX-interpolations">
+				<Name_array id="Colored_Grid_CubexScale-scaleX-interpolations-array" count="1">LINEAR</Name_array>
+				<technique_common>
+					<accessor count="1" source="#Colored_Grid_CubexScale-scaleX-interpolations-array">
+						<param name="INTERPOLATION" type="Name"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<sampler id="Colored_Grid_CubexScale-scaleX-sampler">
+				<input semantic="INPUT" source="#Colored_Grid_CubexScale-scaleX-input"/>
+				<input semantic="OUTPUT" source="#Colored_Grid_CubexScale-scaleX-output"/>
+				<input semantic="INTERPOLATION" source="#Colored_Grid_CubexScale-scaleX-interpolations"/>
+			</sampler>
+			<channel source="#Colored_Grid_CubexScale-scaleX-sampler" target="Colored_Grid_Cube_node/scale.X"/>
+		</animation>
+		<animation id="Colored_Grid_CubeyScale">
+			<source id="Colored_Grid_CubeyScale-scaleY-input">
+				<float_array id="Colored_Grid_CubeyScale-scaleY-input-array" count="1">0</float_array>
+				<technique_common>
+					<accessor count="1" source="#Colored_Grid_CubeyScale-scaleY-input-array">
+						<param name="TIME" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="Colored_Grid_CubeyScale-scaleY-output">
+				<float_array id="Colored_Grid_CubeyScale-scaleY-output-array" count="1">1</float_array>
+				<technique_common>
+					<accessor count="1" source="#Colored_Grid_CubeyScale-scaleY-output-array">
+						<param name="ScY" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="Colored_Grid_CubeyScale-scaleY-interpolations">
+				<Name_array id="Colored_Grid_CubeyScale-scaleY-interpolations-array" count="1">LINEAR</Name_array>
+				<technique_common>
+					<accessor count="1" source="#Colored_Grid_CubeyScale-scaleY-interpolations-array">
+						<param name="INTERPOLATION" type="Name"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<sampler id="Colored_Grid_CubeyScale-scaleY-sampler">
+				<input semantic="INPUT" source="#Colored_Grid_CubeyScale-scaleY-input"/>
+				<input semantic="OUTPUT" source="#Colored_Grid_CubeyScale-scaleY-output"/>
+				<input semantic="INTERPOLATION" source="#Colored_Grid_CubeyScale-scaleY-interpolations"/>
+			</sampler>
+			<channel source="#Colored_Grid_CubeyScale-scaleY-sampler" target="Colored_Grid_Cube_node/scale.Y"/>
+		</animation>
+		<animation id="Colored_Grid_CubezScale">
+			<source id="Colored_Grid_CubezScale-scaleZ-input">
+				<float_array id="Colored_Grid_CubezScale-scaleZ-input-array" count="1">0</float_array>
+				<technique_common>
+					<accessor count="1" source="#Colored_Grid_CubezScale-scaleZ-input-array">
+						<param name="TIME" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="Colored_Grid_CubezScale-scaleZ-output">
+				<float_array id="Colored_Grid_CubezScale-scaleZ-output-array" count="1">1</float_array>
+				<technique_common>
+					<accessor count="1" source="#Colored_Grid_CubezScale-scaleZ-output-array">
+						<param name="ScZ" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="Colored_Grid_CubezScale-scaleZ-interpolations">
+				<Name_array id="Colored_Grid_CubezScale-scaleZ-interpolations-array" count="1">LINEAR</Name_array>
+				<technique_common>
+					<accessor count="1" source="#Colored_Grid_CubezScale-scaleZ-interpolations-array">
+						<param name="INTERPOLATION" type="Name"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<sampler id="Colored_Grid_CubezScale-scaleZ-sampler">
+				<input semantic="INPUT" source="#Colored_Grid_CubezScale-scaleZ-input"/>
+				<input semantic="OUTPUT" source="#Colored_Grid_CubezScale-scaleZ-output"/>
+				<input semantic="INTERPOLATION" source="#Colored_Grid_CubezScale-scaleZ-interpolations"/>
+			</sampler>
+			<channel source="#Colored_Grid_CubezScale-scaleZ-sampler" target="Colored_Grid_Cube_node/scale.Z"/>
+		</animation>
+		<animation id="Colored_Grid_CubexRotate">
+			<source id="Colored_Grid_CubexRotate-rotateX_ANGLE-input">
+				<float_array id="Colored_Grid_CubexRotate-rotateX_ANGLE-input-array" count="1">0</float_array>
+				<technique_common>
+					<accessor count="1" source="#Colored_Grid_CubexRotate-rotateX_ANGLE-input-array">
+						<param name="TIME" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="Colored_Grid_CubexRotate-rotateX_ANGLE-output">
+				<float_array id="Colored_Grid_CubexRotate-rotateX_ANGLE-output-array" count="1">0</float_array>
+				<technique_common>
+					<accessor count="1" source="#Colored_Grid_CubexRotate-rotateX_ANGLE-output-array">
+						<param name="ANGLE" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="Colored_Grid_CubexRotate-rotateX_ANGLE-interpolations">
+				<Name_array id="Colored_Grid_CubexRotate-rotateX_ANGLE-interpolations-array" count="1">LINEAR</Name_array>
+				<technique_common>
+					<accessor count="1" source="#Colored_Grid_CubexRotate-rotateX_ANGLE-interpolations-array">
+						<param name="INTERPOLATION" type="Name"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<sampler id="Colored_Grid_CubexRotate-rotateX_ANGLE-sampler">
+				<input semantic="INPUT" source="#Colored_Grid_CubexRotate-rotateX_ANGLE-input"/>
+				<input semantic="OUTPUT" source="#Colored_Grid_CubexRotate-rotateX_ANGLE-output"/>
+				<input semantic="INTERPOLATION" source="#Colored_Grid_CubexRotate-rotateX_ANGLE-interpolations"/>
+			</sampler>
+			<channel source="#Colored_Grid_CubexRotate-rotateX_ANGLE-sampler" target="Colored_Grid_Cube_node/rotateX.ANGLE"/>
+		</animation>
+		<animation id="Colored_Grid_CubeyRotate">
+			<source id="Colored_Grid_CubeyRotate-rotateY_ANGLE-input">
+				<float_array id="Colored_Grid_CubeyRotate-rotateY_ANGLE-input-array" count="1">0</float_array>
+				<technique_common>
+					<accessor count="1" source="#Colored_Grid_CubeyRotate-rotateY_ANGLE-input-array">
+						<param name="TIME" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="Colored_Grid_CubeyRotate-rotateY_ANGLE-output">
+				<float_array id="Colored_Grid_CubeyRotate-rotateY_ANGLE-output-array" count="1">0</float_array>
+				<technique_common>
+					<accessor count="1" source="#Colored_Grid_CubeyRotate-rotateY_ANGLE-output-array">
+						<param name="ANGLE" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="Colored_Grid_CubeyRotate-rotateY_ANGLE-interpolations">
+				<Name_array id="Colored_Grid_CubeyRotate-rotateY_ANGLE-interpolations-array" count="1">LINEAR</Name_array>
+				<technique_common>
+					<accessor count="1" source="#Colored_Grid_CubeyRotate-rotateY_ANGLE-interpolations-array">
+						<param name="INTERPOLATION" type="Name"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<sampler id="Colored_Grid_CubeyRotate-rotateY_ANGLE-sampler">
+				<input semantic="INPUT" source="#Colored_Grid_CubeyRotate-rotateY_ANGLE-input"/>
+				<input semantic="OUTPUT" source="#Colored_Grid_CubeyRotate-rotateY_ANGLE-output"/>
+				<input semantic="INTERPOLATION" source="#Colored_Grid_CubeyRotate-rotateY_ANGLE-interpolations"/>
+			</sampler>
+			<channel source="#Colored_Grid_CubeyRotate-rotateY_ANGLE-sampler" target="Colored_Grid_Cube_node/rotateY.ANGLE"/>
+		</animation>
+		<animation id="Colored_Grid_CubezRotate">
+			<source id="Colored_Grid_CubezRotate-rotateZ_ANGLE-input">
+				<float_array id="Colored_Grid_CubezRotate-rotateZ_ANGLE-input-array" count="1">0</float_array>
+				<technique_common>
+					<accessor count="1" source="#Colored_Grid_CubezRotate-rotateZ_ANGLE-input-array">
+						<param name="TIME" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="Colored_Grid_CubezRotate-rotateZ_ANGLE-output">
+				<float_array id="Colored_Grid_CubezRotate-rotateZ_ANGLE-output-array" count="1">0</float_array>
+				<technique_common>
+					<accessor count="1" source="#Colored_Grid_CubezRotate-rotateZ_ANGLE-output-array">
+						<param name="ANGLE" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="Colored_Grid_CubezRotate-rotateZ_ANGLE-interpolations">
+				<Name_array id="Colored_Grid_CubezRotate-rotateZ_ANGLE-interpolations-array" count="1">LINEAR</Name_array>
+				<technique_common>
+					<accessor count="1" source="#Colored_Grid_CubezRotate-rotateZ_ANGLE-interpolations-array">
+						<param name="INTERPOLATION" type="Name"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<sampler id="Colored_Grid_CubezRotate-rotateZ_ANGLE-sampler">
+				<input semantic="INPUT" source="#Colored_Grid_CubezRotate-rotateZ_ANGLE-input"/>
+				<input semantic="OUTPUT" source="#Colored_Grid_CubezRotate-rotateZ_ANGLE-output"/>
+				<input semantic="INTERPOLATION" source="#Colored_Grid_CubezRotate-rotateZ_ANGLE-interpolations"/>
+			</sampler>
+			<channel source="#Colored_Grid_CubezRotate-rotateZ_ANGLE-sampler" target="Colored_Grid_Cube_node/rotateZ.ANGLE"/>
+		</animation>
+		<animation id="Colored_Grid_CubexTran">
+			<source id="Colored_Grid_CubexTran-translateX-input">
+				<float_array id="Colored_Grid_CubexTran-translateX-input-array" count="1">0</float_array>
+				<technique_common>
+					<accessor count="1" source="#Colored_Grid_CubexTran-translateX-input-array">
+						<param name="TIME" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="Colored_Grid_CubexTran-translateX-output">
+				<float_array id="Colored_Grid_CubexTran-translateX-output-array" count="1">0</float_array>
+				<technique_common>
+					<accessor count="1" source="#Colored_Grid_CubexTran-translateX-output-array">
+						<param name="X" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="Colored_Grid_CubexTran-translateX-interpolations">
+				<Name_array id="Colored_Grid_CubexTran-translateX-interpolations-array" count="1">LINEAR</Name_array>
+				<technique_common>
+					<accessor count="1" source="#Colored_Grid_CubexTran-translateX-interpolations-array">
+						<param name="INTERPOLATION" type="Name"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<sampler id="Colored_Grid_CubexTran-translateX-sampler">
+				<input semantic="INPUT" source="#Colored_Grid_CubexTran-translateX-input"/>
+				<input semantic="OUTPUT" source="#Colored_Grid_CubexTran-translateX-output"/>
+				<input semantic="INTERPOLATION" source="#Colored_Grid_CubexTran-translateX-interpolations"/>
+			</sampler>
+			<channel source="#Colored_Grid_CubexTran-translateX-sampler" target="Colored_Grid_Cube_node/translate.X"/>
+		</animation>
+		<animation id="Colored_Grid_CubeyTran">
+			<source id="Colored_Grid_CubeyTran-translateY-input">
+				<float_array id="Colored_Grid_CubeyTran-translateY-input-array" count="1">0</float_array>
+				<technique_common>
+					<accessor count="1" source="#Colored_Grid_CubeyTran-translateY-input-array">
+						<param name="TIME" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="Colored_Grid_CubeyTran-translateY-output">
+				<float_array id="Colored_Grid_CubeyTran-translateY-output-array" count="1">0</float_array>
+				<technique_common>
+					<accessor count="1" source="#Colored_Grid_CubeyTran-translateY-output-array">
+						<param name="Y" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="Colored_Grid_CubeyTran-translateY-interpolations">
+				<Name_array id="Colored_Grid_CubeyTran-translateY-interpolations-array" count="1">LINEAR</Name_array>
+				<technique_common>
+					<accessor count="1" source="#Colored_Grid_CubeyTran-translateY-interpolations-array">
+						<param name="INTERPOLATION" type="Name"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<sampler id="Colored_Grid_CubeyTran-translateY-sampler">
+				<input semantic="INPUT" source="#Colored_Grid_CubeyTran-translateY-input"/>
+				<input semantic="OUTPUT" source="#Colored_Grid_CubeyTran-translateY-output"/>
+				<input semantic="INTERPOLATION" source="#Colored_Grid_CubeyTran-translateY-interpolations"/>
+			</sampler>
+			<channel source="#Colored_Grid_CubeyTran-translateY-sampler" target="Colored_Grid_Cube_node/translate.Y"/>
+		</animation>
+		<animation id="Colored_Grid_CubezTran">
+			<source id="Colored_Grid_CubezTran-translateZ-input">
+				<float_array id="Colored_Grid_CubezTran-translateZ-input-array" count="1">0</float_array>
+				<technique_common>
+					<accessor count="1" source="#Colored_Grid_CubezTran-translateZ-input-array">
+						<param name="TIME" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="Colored_Grid_CubezTran-translateZ-output">
+				<float_array id="Colored_Grid_CubezTran-translateZ-output-array" count="1">1.512899994850159</float_array>
+				<technique_common>
+					<accessor count="1" source="#Colored_Grid_CubezTran-translateZ-output-array">
+						<param name="Z" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="Colored_Grid_CubezTran-translateZ-interpolations">
+				<Name_array id="Colored_Grid_CubezTran-translateZ-interpolations-array" count="1">LINEAR</Name_array>
+				<technique_common>
+					<accessor count="1" source="#Colored_Grid_CubezTran-translateZ-interpolations-array">
+						<param name="INTERPOLATION" type="Name"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<sampler id="Colored_Grid_CubezTran-translateZ-sampler">
+				<input semantic="INPUT" source="#Colored_Grid_CubezTran-translateZ-input"/>
+				<input semantic="OUTPUT" source="#Colored_Grid_CubezTran-translateZ-output"/>
+				<input semantic="INTERPOLATION" source="#Colored_Grid_CubezTran-translateZ-interpolations"/>
+			</sampler>
+			<channel source="#Colored_Grid_CubezTran-translateZ-sampler" target="Colored_Grid_Cube_node/translate.Z"/>
+		</animation>
+	</library_animations>
+	<library_visual_scenes>
+		<visual_scene id="Poser_scene">
+			<node id="Poser_scene_root">
+				<node id="Colored_Grid_Cube_node" name="Colored_Grid_Cube" sid="Colored_Grid_Cube_node">
+					<translate sid="origin">0 0 0</translate>
+					<translate sid="translate">0 0 1.512899994850159</translate>
+					<rotate sid="jointOrientZ">0 0 1 0</rotate>
+					<rotate sid="jointOrientY">0 1 0 0</rotate>
+					<rotate sid="jointOrientX">1 0 0 0</rotate>
+					<rotate sid="rotateZ">0 0 1 0</rotate>
+					<rotate sid="rotateY">0 1 0 0</rotate>
+					<rotate sid="rotateX">1 0 0 0</rotate>
+					<rotate sid="rotateAxisX">1 0 0 -0</rotate>
+					<rotate sid="rotateAxisY">0 1 0 -0</rotate>
+					<rotate sid="rotateAxisZ">0 0 1 -0</rotate>
+					<scale sid="scale">1 1 1</scale>
+					<instance_geometry url="#Colored_Grid_Cube_geometry"/>
+				</node>
+			</node>
+		</visual_scene>
+	</library_visual_scenes>
+	<scene>
+		<instance_visual_scene url="#Poser_scene"/>
+	</scene>
+</COLLADA>

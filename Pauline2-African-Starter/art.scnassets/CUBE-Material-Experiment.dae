@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+ <asset>
+  <contributor>
+   <authoring_tool>SceneKit Collada Exporter v1.0</authoring_tool>
+  </contributor>
+  <created>2019-02-05T20:00:18Z</created>
+  <modified>2019-02-05T20:00:18Z</modified>
+  <unit meter="1.000000"/>
+  <up_axis>Y_UP</up_axis>
+ </asset>
+ <library_animations>
+  <animation id="CubexScale" name="CubexScale">
+   <animation id="keyframedAnimations1">
+    <source id="genericSource2">
+     <float_array id="CubexScale3-array" count="1">0 </float_array>
+     <technique_common>
+      <accessor source="#CubexScale3-array" count="1" stride="1">
+       <param name="TIME" type="float"/>
+      </accessor>
+     </technique_common>
+    </source>
+    <source id="genericSource4">
+     <float_array id="CubexScale5-array" count="16">0.134916 -1.08944 0.916095 0 0.786348 1.08944 0.157177 200 -0.460632 1.5407 0.536636 0 0 0 0 1 </float_array>
+     <technique_common>
+      <accessor source="#CubexScale5-array" count="1" stride="16">
+       <param name="TRANSFORM" type="float4x4"/>
+      </accessor>
+     </technique_common>
+    </source>
+    <sampler id="CubexScale6">
+     <input semantic="INPUT" source="#genericSource2"/>
+     <input semantic="OUTPUT" source="#genericSource4"/>
+    </sampler>
+    <channel source="#CubexScale6" target="Cube_node/SID_1"/>
+   </animation>
+  </animation>
+ </library_animations>
+ <library_geometries>
+  <geometry id="geometry7">
+   <mesh>
+    <source id="geometrySource8">
+     <float_array id="ID9-array" count="48">26.2128 -26.2128 26.2128 26.2128 26.2128 26.2128 -26.2128 26.2128 26.2128 -26.2128 -26.2128 26.2128 26.2128 -26.2128 -26.2128 26.2128 26.2128 -26.2128 26.2128 26.2128 26.2128 26.2128 -26.2128 26.2128 -26.2128 -26.2128 -26.2128 -26.2128 26.2128 -26.2128 -26.2128 -26.2128 26.2128 -26.2128 26.2128 26.2128 -26.2128 26.2128 -26.2128 -26.2128 -26.2128 -26.2128 26.2128 26.2128 26.2128 -26.2128 26.2128 26.2128 </float_array>
+     <technique_common>
+      <accessor source="#ID9-array" count="16" stride="3">
+       <param name="X" type="float"/>
+       <param name="Y" type="float"/>
+       <param name="Z" type="float"/>
+      </accessor>
+     </technique_common>
+    </source>
+    <source id="geometrySource10">
+     <float_array id="ID11-array" count="48">0.500122 -0.500122 -0.707279 -0.499878 0.499878 0.706934 -0.499878 0.499878 0.706934 0.500122 -0.500122 -0.707279 0.500122 -0.500122 -0.707279 -0.499878 0.499878 0.706934 -0.499878 0.499878 0.706934 0.500122 -0.500122 -0.707279 0.500122 -0.500122 -0.707279 -0.499878 0.499878 0.706934 0.500122 -0.500122 -0.707279 -0.499878 0.499878 0.706934 -0.499878 0.499878 0.706934 0.500122 -0.500122 -0.707279 -0.499878 0.499878 0.706934 -0.499878 0.499878 0.706934 </float_array>
+     <technique_common>
+      <accessor source="#ID11-array" count="16" stride="3">
+       <param name="X" type="float"/>
+       <param name="Y" type="float"/>
+       <param name="Z" type="float"/>
+      </accessor>
+     </technique_common>
+    </source>
+    <source id="geometrySource12">
+     <float_array id="ID13-array" count="32">0.333333 0.25 0.333333 0 0.666667 0 0.666667 0.25 0.333333 0.5 0.333333 0.75 0 0.75 0 0.5 0.666667 0.5 0.666667 0.75 1 0.5 1 0.75 0.666667 0.75 0.666667 0.5 0.333333 1 0.666667 1 </float_array>
+     <technique_common>
+      <accessor source="#ID13-array" count="16" stride="2">
+       <param name="S" type="float"/>
+       <param name="T" type="float"/>
+      </accessor>
+     </technique_common>
+    </source>
+    <vertices id="geometrySource8-vertices">
+     <input semantic="POSITION" source="#geometrySource8"/>
+     <input semantic="NORMAL" source="#geometrySource10"/>
+    </vertices>
+    <triangles count="12" material="geometryElement14">
+     <input semantic="VERTEX" offset="0" source="#geometrySource8-vertices"/>
+     <input semantic="NORMAL" offset="0" source="#geometrySource10"/>
+     <input semantic="TEXCOORD" offset="0" source="#geometrySource12" set="1"/>
+     <p>0 1 2 0 2 3 4 5 6 4 6 7 8 9 5 8 5 4 10 11 12 10 12 13 14 5 9 14 9 15 4 0 3 4 3 8 </p>
+    </triangles>
+   </mesh>
+  </geometry>
+ </library_geometries>
+ <library_visual_scenes>
+  <visual_scene id="scene15">
+   <node id="Poser_scene_root">
+    <node id="Cube_node" name="Cube_1">
+     <matrix sid="SID_1">0.1349161 -1.089439 0.9160955 0 0.7863485 1.089439 0.1571771 200 -0.4606322 1.5407 0.5366364 0 0 0 0 1 </matrix>
+     <instance_geometry url="#geometry7"/>
+    </node>
+   </node>
+  </visual_scene>
+ </library_visual_scenes>
+ <scene>
+  <instance_visual_scene url="#scene15"/>
+ </scene>
+</COLLADA>

@@ -1,0 +1,14 @@
+newmtl lambert8-fx:1
+Ns 50
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+map_Kd UVCheckerMap01-0.png
+d 1
+newmtl lambert9-fx:2
+Ns 50
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+map_Kd UVCheckerMap02-0.png
+d 1

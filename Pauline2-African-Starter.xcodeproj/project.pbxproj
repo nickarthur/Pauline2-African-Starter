@@ -99,9 +99,9 @@
 		73BFAB28220646FD00A87FCB /* Pauline2-African-Starter */ = {
 			isa = PBXGroup;
 			children = (
-				73BFAB29220646FD00A87FCB /* AppDelegate.swift */,
-				73BFAB2B220646FD00A87FCB /* art.scnassets */,
 				73BFAB2D220646FD00A87FCB /* ViewController.swift */,
+				73BFAB2B220646FD00A87FCB /* art.scnassets */,
+				73BFAB29220646FD00A87FCB /* AppDelegate.swift */,
 				73BFAB2F220646FD00A87FCB /* Main.storyboard */,
 				73BFAB32220646FF00A87FCB /* Assets.xcassets */,
 				73BFAB34220646FF00A87FCB /* LaunchScreen.storyboard */,
@@ -374,6 +374,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -428,6 +429,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

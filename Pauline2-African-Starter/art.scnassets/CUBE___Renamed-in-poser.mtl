@@ -1,0 +1,13 @@
+newmtl Preview
+Ns 50
+Ka 0 0 0
+Kd 0.192484 0.0814813 0.456833
+Ks 0.198341 0.125046 0.0482588
+d 1
+newmtl lambert8-fx
+Ns 50
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+map_Kd UVCheckerMap01-0.png
+d 1

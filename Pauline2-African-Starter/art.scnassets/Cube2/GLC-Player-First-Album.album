@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Album>
+    <Header>
+        <Application Name="GLC_Player" Version="2.1"/>
+    </Header>
+    <Root>
+        <Model AFileName="/Users/larrynickerson/Library/Mobile Documents/com~apple~CloudDocs/ar-projects-share/Cube2/Cube/Cube.obj" RFileName="Cube/Cube.obj">
+            <Camera Angle="35">
+                <Eye x="-1.01002" y="-0.467743" z="1.01002"/>
+                <Target x="0" y="0.542276" z="0"/>
+                <Up x="0.408248" y="0.408248" z="0.816497"/>
+                <DefaultUp x="0" y="0" z="1"/>
+            </Camera>
+            <Materials size="1">
+                <Material name="initialShadingGroup">
+                    <Ambiant r="255" g="0" b="255" a="255"/>
+                    <Diffuse r="255" g="0" b="255" a="255"/>
+                    <Specular r="128" g="14" b="255" a="255"/>
+                    <LightEmission r="255" g="0" b="0" a="255"/>
+                    <Shininess value="50"/>
+                    <Texture fileName=""/>
+                </Material>
+            </Materials>
+            <InvisibleInstances size="0"/>
+            <Shaders size="0"/>
+        </Model>
+    </Root>
+</Album>

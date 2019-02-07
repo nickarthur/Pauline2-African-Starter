@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+	<asset>
+		<contributor>
+			<authoring_tool>Poser 11.1.0.34759</authoring_tool>
+		</contributor>
+		<created>2019-02-05T21:20:25Z</created>
+		<modified>2019-02-05T21:20:25Z</modified>
+		<unit name="Meter"/>
+		<up_axis>Y_UP</up_axis>
+	</asset>
+	<library_geometries>
+		<geometry id="pCube2_geometry">
+			<mesh>
+				<source id="pCube2_geometry-positions">
+					<float_array id="pCube2_geometry-positions-array" count="24">-0.004999999888241291 -0.004999999888241291 0.004999999888241291 0.004999999888241291 -0.004999999888241291 0.004999999888241291 -0.004999999888241291 0.004999999888241291 0.004999999888241291 0.004999999888241291 0.004999999888241291 0.004999999888241291 -0.004999999888241291 0.004999999888241291 -0.004999999888241291 0.004999999888241291 0.004999999888241291 -0.004999999888241291 -0.004999999888241291 -0.004999999888241291 -0.004999999888241291 0.004999999888241291 -0.004999999888241291 -0.004999999888241291</float_array>
+					<technique_common>
+						<accessor count="8" source="#pCube2_geometry-positions-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="pCube2_geometry-normals">
+					<float_array id="pCube2_geometry-normals-array" count="24">-0.999755859375 0 0 0.999755859375 0 0 -0.999755859375 0 0 0.999755859375 0 0 -0.999755859375 0 0 0.999755859375 0 0 -0.999755859375 0 0 0.999755859375 0 0</float_array>
+					<technique_common>
+						<accessor count="8" source="#pCube2_geometry-normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="pCube2_geometry-uvs">
+					<float_array id="pCube2_geometry-uvs-array" count="28">0.375 0 0.625 0 0.375 0.25 0.625 0.25 0.375 0.5 0.625 0.5 0.375 0.75 0.625 0.75 0.375 1 0.625 1 0.875 0 0.875 0.25 0.125 0 0.125 0.25</float_array>
+					<technique_common>
+						<accessor count="14" source="#pCube2_geometry-uvs-array" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="pCube2_geometry-vertices">
+					<input semantic="POSITION" source="#pCube2_geometry-positions"/>
+				</vertices>
+				<polylist count="12">
+					<input offset="0" semantic="VERTEX" source="#pCube2_geometry-vertices" set="0"/>
+					<input offset="1" semantic="NORMAL" source="#pCube2_geometry-normals" set="0"/>
+					<input offset="2" semantic="TEXCOORD" source="#pCube2_geometry-uvs" set="0"/>
+					<vcount>3 3 3 3 3 3 3 3 3 3 3 3</vcount>
+					<p>0 0 0 1 1 1 2 2 2 2 2 2 1 1 1 3 3 3 2 2 2 3 3 3 4 4 4 4 4 4 3 3 3 5 5 5 4 4 4 5 5 5 6 6 6 6 6 6 5 5 5 7 7 7 6 6 6 7 7 7 0 0 8 0 0 8 7 7 7 1 1 9 1 1 1 7 7 10 3 3 3 3 3 3 7 7 10 5 5 11 6 6 12 0 0 0 4 4 13 4 4 13 0 0 0 2 2 2</p>
+				</polylist>
+			</mesh>
+		</geometry>
+		<geometry id="pCube3_geometry">
+			<mesh>
+				<source id="pCube3_geometry-positions">
+					<float_array id="pCube3_geometry-positions-array" count="24">-0.004999999888241291 -0.004999999888241291 0.004999999888241291 0.004999999888241291 -0.004999999888241291 0.004999999888241291 -0.004999999888241291 0.004999999888241291 0.004999999888241291 0.004999999888241291 0.004999999888241291 0.004999999888241291 -0.004999999888241291 0.004999999888241291 -0.004999999888241291 0.004999999888241291 0.004999999888241291 -0.004999999888241291 -0.004999999888241291 -0.004999999888241291 -0.004999999888241291 0.004999999888241291 -0.004999999888241291 -0.004999999888241291</float_array>
+					<technique_common>
+						<accessor count="8" source="#pCube3_geometry-positions-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="pCube3_geometry-normals">
+					<float_array id="pCube3_geometry-normals-array" count="24">-0.999755859375 0 0 0.999755859375 0 0 -0.999755859375 0 0 0.999755859375 0 0 -0.999755859375 0 0 0.999755859375 0 0 -0.999755859375 0 0 0.999755859375 0 0</float_array>
+					<technique_common>
+						<accessor count="8" source="#pCube3_geometry-normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="pCube3_geometry-uvs">
+					<float_array id="pCube3_geometry-uvs-array" count="28">0.375 0 0.625 0 0.375 0.25 0.625 0.25 0.375 0.5 0.625 0.5 0.375 0.75 0.625 0.75 0.375 1 0.625 1 0.875 0 0.875 0.25 0.125 0 0.125 0.25</float_array>
+					<technique_common>
+						<accessor count="14" source="#pCube3_geometry-uvs-array" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="pCube3_geometry-vertices">
+					<input semantic="POSITION" source="#pCube3_geometry-positions"/>
+				</vertices>
+				<polylist count="12">
+					<input offset="0" semantic="VERTEX" source="#pCube3_geometry-vertices" set="0"/>
+					<input offset="1" semantic="NORMAL" source="#pCube3_geometry-normals" set="0"/>
+					<input offset="2" semantic="TEXCOORD" source="#pCube3_geometry-uvs" set="0"/>
+					<vcount>3 3 3 3 3 3 3 3 3 3 3 3</vcount>
+					<p>0 0 0 1 1 1 2 2 2 2 2 2 1 1 1 3 3 3 2 2 2 3 3 3 4 4 4 4 4 4 3 3 3 5 5 5 4 4 4 5 5 5 6 6 6 6 6 6 5 5 5 7 7 7 6 6 6 7 7 7 0 0 8 0 0 8 7 7 7 1 1 9 1 1 1 7 7 10 3 3 3 3 3 3 7 7 10 5 5 11 6 6 12 0 0 0 4 4 13 4 4 13 0 0 0 2 2 2</p>
+				</polylist>
+			</mesh>
+		</geometry>
+	</library_geometries>
+	<library_animations>
+		<animation id="pCube2xScale">
+			<source id="pCube2xScale-scaleX-input">
+				<float_array id="pCube2xScale-scaleX-input-array" count="1">0</float_array>
+				<technique_common>
+					<accessor count="1" source="#pCube2xScale-scaleX-input-array">
+						<param name="TIME" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="pCube2xScale-scaleX-output">
+				<float_array id="pCube2xScale-scaleX-output-array" count="1">100</float_array>
+				<technique_common>
+					<accessor count="1" source="#pCube2xScale-scaleX-output-array">
+						<param name="ScX" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="pCube2xScale-scaleX-interpolations">
+				<Name_array id="pCube2xScale-scaleX-interpolations-array" count="1">LINEAR</Name_array>
+				<technique_common>
+					<accessor count="1" source="#pCube2xScale-scaleX-interpolations-array">
+						<param name="INTERPOLATION" type="Name"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<sampler id="pCube2xScale-scaleX-sampler">
+				<input semantic="INPUT" source="#pCube2xScale-scaleX-input"/>
+				<input semantic="OUTPUT" source="#pCube2xScale-scaleX-output"/>
+				<input semantic="INTERPOLATION" source="#pCube2xScale-scaleX-interpolations"/>
+			</sampler>
+			<channel source="#pCube2xScale-scaleX-sampler" target="pCube2_node/scale.X"/>
+		</animation>
+		<animation id="pCube2yScale">
+			<source id="pCube2yScale-scaleY-input">
+				<float_array id="pCube2yScale-scaleY-input-array" count="1">0</float_array>
+				<technique_common>
+					<accessor count="1" source="#pCube2yScale-scaleY-input-array">
+						<param name="TIME" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="pCube2yScale-scaleY-output">
+				<float_array id="pCube2yScale-scaleY-output-array" count="1">100</float_array>
+				<technique_common>
+					<accessor count="1" source="#pCube2yScale-scaleY-output-array">
+						<param name="ScY" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="pCube2yScale-scaleY-interpolations">
+				<Name_array id="pCube2yScale-scaleY-interpolations-array" count="1">LINEAR</Name_array>
+				<technique_common>
+					<accessor count="1" source="#pCube2yScale-scaleY-interpolations-array">
+						<param name="INTERPOLATION" type="Name"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<sampler id="pCube2yScale-scaleY-sampler">
+				<input semantic="INPUT" source="#pCube2yScale-scaleY-input"/>
+				<input semantic="OUTPUT" source="#pCube2yScale-scaleY-output"/>
+				<input semantic="INTERPOLATION" source="#pCube2yScale-scaleY-interpolations"/>
+			</sampler>
+			<channel source="#pCube2yScale-scaleY-sampler" target="pCube2_node/scale.Y"/>
+		</animation>
+		<animation id="pCube2zScale">
+			<source id="pCube2zScale-scaleZ-input">
+				<float_array id="pCube2zScale-scaleZ-input-array" count="1">0</float_array>
+				<technique_common>
+					<accessor count="1" source="#pCube2zScale-scaleZ-input-array">
+						<param name="TIME" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="pCube2zScale-scaleZ-output">
+				<float_array id="pCube2zScale-scaleZ-output-array" count="1">100</float_array>
+				<technique_common>
+					<accessor count="1" source="#pCube2zScale-scaleZ-output-array">
+						<param name="ScZ" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="pCube2zScale-scaleZ-interpolations">
+				<Name_array id="pCube2zScale-scaleZ-interpolations-array" count="1">LINEAR</Name_array>
+				<technique_common>
+					<accessor count="1" source="#pCube2zScale-scaleZ-interpolations-array">
+						<param name="INTERPOLATION" type="Name"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<sampler id="pCube2zScale-scaleZ-sampler">
+				<input semantic="INPUT" source="#pCube2zScale-scaleZ-input"/>
+				<input semantic="OUTPUT" source="#pCube2zScale-scaleZ-output"/>
+				<input semantic="INTERPOLATION" source="#pCube2zScale-scaleZ-interpolations"/>
+			</sampler>
+			<channel source="#pCube2zScale-scaleZ-sampler" target="pCube2_node/scale.Z"/>
+		</animation>
+		<animation id="pCube2xRotate">
+			<source id="pCube2xRotate-rotateX_ANGLE-input">
+				<float_array id="pCube2xRotate-rotateX_ANGLE-input-array" count="1">0</float_array>
+				<technique_common>
+					<accessor count="1" source="#pCube2xRotate-rotateX_ANGLE-input-array">
+						<param name="TIME" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="pCube2xRotate-rotateX_ANGLE-output">
+				<float_array id="pCube2xRotate-rotateX_ANGLE-output-array" count="1">0</float_array>
+				<technique_common>
+					<accessor count="1" source="#pCube2xRotate-rotateX_ANGLE-output-array">
+						<param name="ANGLE" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="pCube2xRotate-rotateX_ANGLE-interpolations">
+				<Name_array id="pCube2xRotate-rotateX_ANGLE-interpolations-array" count="1">LINEAR</Name_array>
+				<technique_common>
+					<accessor count="1" source="#pCube2xRotate-rotateX_ANGLE-interpolations-array">
+						<param name="INTERPOLATION" type="Name"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<sampler id="pCube2xRotate-rotateX_ANGLE-sampler">
+				<input semantic="INPUT" source="#pCube2xRotate-rotateX_ANGLE-input"/>
+				<input semantic="OUTPUT" source="#pCube2xRotate-rotateX_ANGLE-output"/>
+				<input semantic="INTERPOLATION" source="#pCube2xRotate-rotateX_ANGLE-interpolations"/>
+			</sampler>
+			<channel source="#pCube2xRotate-rotateX_ANGLE-sampler" target="pCube2_node/rotateX.ANGLE"/>
+		</animation>
+		<animation id="pCube2yRotate">
+			<source id="pCube2yRotate-rotateY_ANGLE-input">
+				<float_array id="pCube2yRotate-rotateY_ANGLE-input-array" count="1">0</float_array>
+				<technique_common>
+					<accessor count="1" source="#pCube2yRotate-rotateY_ANGLE-input-array">
+						<param name="TIME" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="pCube2yRotate-rotateY_ANGLE-output">
+				<float_array id="pCube2yRotate-rotateY_ANGLE-output-array" count="1">0</float_array>
+				<technique_common>
+					<accessor count="1" source="#pCube2yRotate-rotateY_ANGLE-output-array">
+						<param name="ANGLE" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="pCube2yRotate-rotateY_ANGLE-interpolations">
+				<Name_array id="pCube2yRotate-rotateY_ANGLE-interpolations-array" count="1">LINEAR</Name_array>
+				<technique_common>
+					<accessor count="1" source="#pCube2yRotate-rotateY_ANGLE-interpolations-array">
+						<param name="INTERPOLATION" type="Name"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<sampler id="pCube2yRotate-rotateY_ANGLE-sampler">
+				<input semantic="INPUT" source="#pCube2yRotate-rotateY_ANGLE-input"/>
+				<input semantic="OUTPUT" source="#pCube2yRotate-rotateY_ANGLE-output"/>
+				<input semantic="INTERPOLATION" source="#pCube2yRotate-rotateY_ANGLE-interpolations"/>
+			</sampler>
+			<channel source="#pCube2yRotate-rotateY_ANGLE-sampler" target="pCube2_node/rotateY.ANGLE"/>
+		</animation>
+		<animation id="pCube2zRotate">
+			<source id="pCube2zRotate-rotateZ_ANGLE-input">
+				<float_array id="pCube2zRotate-rotateZ_ANGLE-input-array" count="1">0</float_array>
+				<technique_common>
+					<accessor count="1" source="#pCube2zRotate-rotateZ_ANGLE-input-array">
+						<param name="TIME" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="pCube2zRotate-rotateZ_ANGLE-output">
+				<float_array id="pCube2zRotate-rotateZ_ANGLE-output-array" count="1">0</float_array>
+				<technique_common>
+					<accessor count="1" source="#pCube2zRotate-rotateZ_ANGLE-output-array">
+						<param name="ANGLE" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="pCube2zRotate-rotateZ_ANGLE-interpolations">
+				<Name_array id="pCube2zRotate-rotateZ_ANGLE-interpolations-array" count="1">LINEAR</Name_array>
+				<technique_common>
+					<accessor count="1" source="#pCube2zRotate-rotateZ_ANGLE-interpolations-array">
+						<param name="INTERPOLATION" type="Name"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<sampler id="pCube2zRotate-rotateZ_ANGLE-sampler">
+				<input semantic="INPUT" source="#pCube2zRotate-rotateZ_ANGLE-input"/>
+				<input semantic="OUTPUT" source="#pCube2zRotate-rotateZ_ANGLE-output"/>
+				<input semantic="INTERPOLATION" source="#pCube2zRotate-rotateZ_ANGLE-interpolations"/>
+			</sampler>
+			<channel source="#pCube2zRotate-rotateZ_ANGLE-sampler" target="pCube2_node/rotateZ.ANGLE"/>
+		</animation>
+		<animation id="pCube2xTran">
+			<source id="pCube2xTran-translateX-input">
+				<float_array id="pCube2xTran-translateX-input-array" count="1">0</float_array>
+				<technique_common>
+					<accessor count="1" source="#pCube2xTran-translateX-input-array">
+						<param name="TIME" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="pCube2xTran-translateX-output">
+				<float_array id="pCube2xTran-translateX-output-array" count="1">0</float_array>
+				<technique_common>
+					<accessor count="1" source="#pCube2xTran-translateX-output-array">
+						<param name="X" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="pCube2xTran-translateX-interpolations">
+				<Name_array id="pCube2xTran-translateX-interpolations-array" count="1">LINEAR</Name_array>
+				<technique_common>
+					<accessor count="1" source="#pCube2xTran-translateX-interpolations-array">
+						<param name="INTERPOLATION" type="Name"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<sampler id="pCube2xTran-translateX-sampler">
+				<input semantic="INPUT" source="#pCube2xTran-translateX-input"/>
+				<input semantic="OUTPUT" source="#pCube2xTran-translateX-output"/>
+				<input semantic="INTERPOLATION" source="#pCube2xTran-translateX-interpolations"/>
+			</sampler>
+			<channel source="#pCube2xTran-translateX-sampler" target="pCube2_node/translate.X"/>
+		</animation>
+		<animation id="pCube2yTran">
+			<source id="pCube2yTran-translateY-input">
+				<float_array id="pCube2yTran-translateY-input-array" count="1">0</float_array>
+				<technique_common>
+					<accessor count="1" source="#pCube2yTran-translateY-input-array">
+						<param name="TIME" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="pCube2yTran-translateY-output">
+				<float_array id="pCube2yTran-translateY-output-array" count="1">0.5</float_array>
+				<technique_common>
+					<accessor count="1" source="#pCube2yTran-translateY-output-array">
+						<param name="Y" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="pCube2yTran-translateY-interpolations">
+				<Name_array id="pCube2yTran-translateY-interpolations-array" count="1">LINEAR</Name_array>
+				<technique_common>
+					<accessor count="1" source="#pCube2yTran-translateY-interpolations-array">
+						<param name="INTERPOLATION" type="Name"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<sampler id="pCube2yTran-translateY-sampler">
+				<input semantic="INPUT" source="#pCube2yTran-translateY-input"/>
+				<input semantic="OUTPUT" source="#pCube2yTran-translateY-output"/>
+				<input semantic="INTERPOLATION" source="#pCube2yTran-translateY-interpolations"/>
+			</sampler>
+			<channel source="#pCube2yTran-translateY-sampler" target="pCube2_node/translate.Y"/>
+		</animation>
+		<animation id="pCube2zTran">
+			<source id="pCube2zTran-translateZ-input">
+				<float_array id="pCube2zTran-translateZ-input-array" count="1">0</float_array>
+				<technique_common>
+					<accessor count="1" source="#pCube2zTran-translateZ-input-array">
+						<param name="TIME" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="pCube2zTran-translateZ-output">
+				<float_array id="pCube2zTran-translateZ-output-array" count="1">0</float_array>
+				<technique_common>
+					<accessor count="1" source="#pCube2zTran-translateZ-output-array">
+						<param name="Z" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="pCube2zTran-translateZ-interpolations">
+				<Name_array id="pCube2zTran-translateZ-interpolations-array" count="1">LINEAR</Name_array>
+				<technique_common>
+					<accessor count="1" source="#pCube2zTran-translateZ-interpolations-array">
+						<param name="INTERPOLATION" type="Name"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<sampler id="pCube2zTran-translateZ-sampler">
+				<input semantic="INPUT" source="#pCube2zTran-translateZ-input"/>
+				<input semantic="OUTPUT" source="#pCube2zTran-translateZ-output"/>
+				<input semantic="INTERPOLATION" source="#pCube2zTran-translateZ-interpolations"/>
+			</sampler>
+			<channel source="#pCube2zTran-translateZ-sampler" target="pCube2_node/translate.Z"/>
+		</animation>
+		<animation id="pCube3xScale">
+			<source id="pCube3xScale-scaleX-input">
+				<float_array id="pCube3xScale-scaleX-input-array" count="1">0</float_array>
+				<technique_common>
+					<accessor count="1" source="#pCube3xScale-scaleX-input-array">
+						<param name="TIME" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="pCube3xScale-scaleX-output">
+				<float_array id="pCube3xScale-scaleX-output-array" count="1">10</float_array>
+				<technique_common>
+					<accessor count="1" source="#pCube3xScale-scaleX-output-array">
+						<param name="ScX" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="pCube3xScale-scaleX-interpolations">
+				<Name_array id="pCube3xScale-scaleX-interpolations-array" count="1">LINEAR</Name_array>
+				<technique_common>
+					<accessor count="1" source="#pCube3xScale-scaleX-interpolations-array">
+						<param name="INTERPOLATION" type="Name"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<sampler id="pCube3xScale-scaleX-sampler">
+				<input semantic="INPUT" source="#pCube3xScale-scaleX-input"/>
+				<input semantic="OUTPUT" source="#pCube3xScale-scaleX-output"/>
+				<input semantic="INTERPOLATION" source="#pCube3xScale-scaleX-interpolations"/>
+			</sampler>
+			<channel source="#pCube3xScale-scaleX-sampler" target="pCube3_node/scale.X"/>
+		</animation>
+		<animation id="pCube3yScale">
+			<source id="pCube3yScale-scaleY-input">
+				<float_array id="pCube3yScale-scaleY-input-array" count="1">0</float_array>
+				<technique_common>
+					<accessor count="1" source="#pCube3yScale-scaleY-input-array">
+						<param name="TIME" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="pCube3yScale-scaleY-output">
+				<float_array id="pCube3yScale-scaleY-output-array" count="1">10</float_array>
+				<technique_common>
+					<accessor count="1" source="#pCube3yScale-scaleY-output-array">
+						<param name="ScY" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="pCube3yScale-scaleY-interpolations">
+				<Name_array id="pCube3yScale-scaleY-interpolations-array" count="1">LINEAR</Name_array>
+				<technique_common>
+					<accessor count="1" source="#pCube3yScale-scaleY-interpolations-array">
+						<param name="INTERPOLATION" type="Name"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<sampler id="pCube3yScale-scaleY-sampler">
+				<input semantic="INPUT" source="#pCube3yScale-scaleY-input"/>
+				<input semantic="OUTPUT" source="#pCube3yScale-scaleY-output"/>
+				<input semantic="INTERPOLATION" source="#pCube3yScale-scaleY-interpolations"/>
+			</sampler>
+			<channel source="#pCube3yScale-scaleY-sampler" target="pCube3_node/scale.Y"/>
+		</animation>
+		<animation id="pCube3zScale">
+			<source id="pCube3zScale-scaleZ-input">
+				<float_array id="pCube3zScale-scaleZ-input-array" count="1">0</float_array>
+				<technique_common>
+					<accessor count="1" source="#pCube3zScale-scaleZ-input-array">
+						<param name="TIME" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="pCube3zScale-scaleZ-output">
+				<float_array id="pCube3zScale-scaleZ-output-array" count="1">10</float_array>
+				<technique_common>
+					<accessor count="1" source="#pCube3zScale-scaleZ-output-array">
+						<param name="ScZ" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="pCube3zScale-scaleZ-interpolations">
+				<Name_array id="pCube3zScale-scaleZ-interpolations-array" count="1">LINEAR</Name_array>
+				<technique_common>
+					<accessor count="1" source="#pCube3zScale-scaleZ-interpolations-array">
+						<param name="INTERPOLATION" type="Name"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<sampler id="pCube3zScale-scaleZ-sampler">
+				<input semantic="INPUT" source="#pCube3zScale-scaleZ-input"/>
+				<input semantic="OUTPUT" source="#pCube3zScale-scaleZ-output"/>
+				<input semantic="INTERPOLATION" source="#pCube3zScale-scaleZ-interpolations"/>
+			</sampler>
+			<channel source="#pCube3zScale-scaleZ-sampler" target="pCube3_node/scale.Z"/>
+		</animation>
+		<animation id="pCube3xRotate">
+			<source id="pCube3xRotate-rotateX_ANGLE-input">
+				<float_array id="pCube3xRotate-rotateX_ANGLE-input-array" count="1">0</float_array>
+				<technique_common>
+					<accessor count="1" source="#pCube3xRotate-rotateX_ANGLE-input-array">
+						<param name="TIME" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="pCube3xRotate-rotateX_ANGLE-output">
+				<float_array id="pCube3xRotate-rotateX_ANGLE-output-array" count="1">0</float_array>
+				<technique_common>
+					<accessor count="1" source="#pCube3xRotate-rotateX_ANGLE-output-array">
+						<param name="ANGLE" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="pCube3xRotate-rotateX_ANGLE-interpolations">
+				<Name_array id="pCube3xRotate-rotateX_ANGLE-interpolations-array" count="1">LINEAR</Name_array>
+				<technique_common>
+					<accessor count="1" source="#pCube3xRotate-rotateX_ANGLE-interpolations-array">
+						<param name="INTERPOLATION" type="Name"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<sampler id="pCube3xRotate-rotateX_ANGLE-sampler">
+				<input semantic="INPUT" source="#pCube3xRotate-rotateX_ANGLE-input"/>
+				<input semantic="OUTPUT" source="#pCube3xRotate-rotateX_ANGLE-output"/>
+				<input semantic="INTERPOLATION" source="#pCube3xRotate-rotateX_ANGLE-interpolations"/>
+			</sampler>
+			<channel source="#pCube3xRotate-rotateX_ANGLE-sampler" target="pCube3_node/rotateX.ANGLE"/>
+		</animation>
+		<animation id="pCube3yRotate">
+			<source id="pCube3yRotate-rotateY_ANGLE-input">
+				<float_array id="pCube3yRotate-rotateY_ANGLE-input-array" count="1">0</float_array>
+				<technique_common>
+					<accessor count="1" source="#pCube3yRotate-rotateY_ANGLE-input-array">
+						<param name="TIME" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="pCube3yRotate-rotateY_ANGLE-output">
+				<float_array id="pCube3yRotate-rotateY_ANGLE-output-array" count="1">0</float_array>
+				<technique_common>
+					<accessor count="1" source="#pCube3yRotate-rotateY_ANGLE-output-array">
+						<param name="ANGLE" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="pCube3yRotate-rotateY_ANGLE-interpolations">
+				<Name_array id="pCube3yRotate-rotateY_ANGLE-interpolations-array" count="1">LINEAR</Name_array>
+				<technique_common>
+					<accessor count="1" source="#pCube3yRotate-rotateY_ANGLE-interpolations-array">
+						<param name="INTERPOLATION" type="Name"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<sampler id="pCube3yRotate-rotateY_ANGLE-sampler">
+				<input semantic="INPUT" source="#pCube3yRotate-rotateY_ANGLE-input"/>
+				<input semantic="OUTPUT" source="#pCube3yRotate-rotateY_ANGLE-output"/>
+				<input semantic="INTERPOLATION" source="#pCube3yRotate-rotateY_ANGLE-interpolations"/>
+			</sampler>
+			<channel source="#pCube3yRotate-rotateY_ANGLE-sampler" target="pCube3_node/rotateY.ANGLE"/>
+		</animation>
+		<animation id="pCube3zRotate">
+			<source id="pCube3zRotate-rotateZ_ANGLE-input">
+				<float_array id="pCube3zRotate-rotateZ_ANGLE-input-array" count="1">0</float_array>
+				<technique_common>
+					<accessor count="1" source="#pCube3zRotate-rotateZ_ANGLE-input-array">
+						<param name="TIME" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="pCube3zRotate-rotateZ_ANGLE-output">
+				<float_array id="pCube3zRotate-rotateZ_ANGLE-output-array" count="1">0</float_array>
+				<technique_common>
+					<accessor count="1" source="#pCube3zRotate-rotateZ_ANGLE-output-array">
+						<param name="ANGLE" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="pCube3zRotate-rotateZ_ANGLE-interpolations">
+				<Name_array id="pCube3zRotate-rotateZ_ANGLE-interpolations-array" count="1">LINEAR</Name_array>
+				<technique_common>
+					<accessor count="1" source="#pCube3zRotate-rotateZ_ANGLE-interpolations-array">
+						<param name="INTERPOLATION" type="Name"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<sampler id="pCube3zRotate-rotateZ_ANGLE-sampler">
+				<input semantic="INPUT" source="#pCube3zRotate-rotateZ_ANGLE-input"/>
+				<input semantic="OUTPUT" source="#pCube3zRotate-rotateZ_ANGLE-output"/>
+				<input semantic="INTERPOLATION" source="#pCube3zRotate-rotateZ_ANGLE-interpolations"/>
+			</sampler>
+			<channel source="#pCube3zRotate-rotateZ_ANGLE-sampler" target="pCube3_node/rotateZ.ANGLE"/>
+		</animation>
+		<animation id="pCube3xTran">
+			<source id="pCube3xTran-translateX-input">
+				<float_array id="pCube3xTran-translateX-input-array" count="1">0</float_array>
+				<technique_common>
+					<accessor count="1" source="#pCube3xTran-translateX-input-array">
+						<param name="TIME" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="pCube3xTran-translateX-output">
+				<float_array id="pCube3xTran-translateX-output-array" count="1">0</float_array>
+				<technique_common>
+					<accessor count="1" source="#pCube3xTran-translateX-output-array">
+						<param name="X" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="pCube3xTran-translateX-interpolations">
+				<Name_array id="pCube3xTran-translateX-interpolations-array" count="1">LINEAR</Name_array>
+				<technique_common>
+					<accessor count="1" source="#pCube3xTran-translateX-interpolations-array">
+						<param name="INTERPOLATION" type="Name"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<sampler id="pCube3xTran-translateX-sampler">
+				<input semantic="INPUT" source="#pCube3xTran-translateX-input"/>
+				<input semantic="OUTPUT" source="#pCube3xTran-translateX-output"/>
+				<input semantic="INTERPOLATION" source="#pCube3xTran-translateX-interpolations"/>
+			</sampler>
+			<channel source="#pCube3xTran-translateX-sampler" target="pCube3_node/translate.X"/>
+		</animation>
+		<animation id="pCube3yTran">
+			<source id="pCube3yTran-translateY-input">
+				<float_array id="pCube3yTran-translateY-input-array" count="1">0</float_array>
+				<technique_common>
+					<accessor count="1" source="#pCube3yTran-translateY-input-array">
+						<param name="TIME" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="pCube3yTran-translateY-output">
+				<float_array id="pCube3yTran-translateY-output-array" count="1">1.049680471420288</float_array>
+				<technique_common>
+					<accessor count="1" source="#pCube3yTran-translateY-output-array">
+						<param name="Y" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="pCube3yTran-translateY-interpolations">
+				<Name_array id="pCube3yTran-translateY-interpolations-array" count="1">LINEAR</Name_array>
+				<technique_common>
+					<accessor count="1" source="#pCube3yTran-translateY-interpolations-array">
+						<param name="INTERPOLATION" type="Name"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<sampler id="pCube3yTran-translateY-sampler">
+				<input semantic="INPUT" source="#pCube3yTran-translateY-input"/>
+				<input semantic="OUTPUT" source="#pCube3yTran-translateY-output"/>
+				<input semantic="INTERPOLATION" source="#pCube3yTran-translateY-interpolations"/>
+			</sampler>
+			<channel source="#pCube3yTran-translateY-sampler" target="pCube3_node/translate.Y"/>
+		</animation>
+		<animation id="pCube3zTran">
+			<source id="pCube3zTran-translateZ-input">
+				<float_array id="pCube3zTran-translateZ-input-array" count="1">0</float_array>
+				<technique_common>
+					<accessor count="1" source="#pCube3zTran-translateZ-input-array">
+						<param name="TIME" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="pCube3zTran-translateZ-output">
+				<float_array id="pCube3zTran-translateZ-output-array" count="1">0</float_array>
+				<technique_common>
+					<accessor count="1" source="#pCube3zTran-translateZ-output-array">
+						<param name="Z" type="float"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<source id="pCube3zTran-translateZ-interpolations">
+				<Name_array id="pCube3zTran-translateZ-interpolations-array" count="1">LINEAR</Name_array>
+				<technique_common>
+					<accessor count="1" source="#pCube3zTran-translateZ-interpolations-array">
+						<param name="INTERPOLATION" type="Name"/>
+					</accessor>
+				</technique_common>
+			</source>
+			<sampler id="pCube3zTran-translateZ-sampler">
+				<input semantic="INPUT" source="#pCube3zTran-translateZ-input"/>
+				<input semantic="OUTPUT" source="#pCube3zTran-translateZ-output"/>
+				<input semantic="INTERPOLATION" source="#pCube3zTran-translateZ-interpolations"/>
+			</sampler>
+			<channel source="#pCube3zTran-translateZ-sampler" target="pCube3_node/translate.Z"/>
+		</animation>
+	</library_animations>
+	<library_visual_scenes>
+		<visual_scene id="Poser_scene">
+			<node id="Poser_scene_root">
+				<node id="pCube2_node" name="pCube2" sid="pCube2_node">
+					<translate sid="origin">0 0 0</translate>
+					<translate sid="translate">0 0.5 0</translate>
+					<rotate sid="jointOrientZ">0 0 1 0</rotate>
+					<rotate sid="jointOrientY">0 1 0 0</rotate>
+					<rotate sid="jointOrientX">1 0 0 0</rotate>
+					<rotate sid="rotateZ">0 0 1 0</rotate>
+					<rotate sid="rotateY">0 1 0 0</rotate>
+					<rotate sid="rotateX">1 0 0 0</rotate>
+					<rotate sid="rotateAxisX">1 0 0 -0</rotate>
+					<rotate sid="rotateAxisY">0 1 0 -0</rotate>
+					<rotate sid="rotateAxisZ">0 0 1 -0</rotate>
+					<scale sid="scale">100 100 100</scale>
+					<instance_geometry url="#pCube2_geometry"/>
+				</node>
+				<node id="pCube3_node" name="pCube3" sid="pCube3_node">
+					<translate sid="origin">0 0 0</translate>
+					<translate sid="translate">0 1.049680471420288 0</translate>
+					<rotate sid="jointOrientZ">0 0 1 0</rotate>
+					<rotate sid="jointOrientY">0 1 0 0</rotate>
+					<rotate sid="jointOrientX">1 0 0 0</rotate>
+					<rotate sid="rotateZ">0 0 1 0</rotate>
+					<rotate sid="rotateY">0 1 0 0</rotate>
+					<rotate sid="rotateX">1 0 0 0</rotate>
+					<rotate sid="rotateAxisX">1 0 0 -0</rotate>
+					<rotate sid="rotateAxisY">0 1 0 -0</rotate>
+					<rotate sid="rotateAxisZ">0 0 1 -0</rotate>
+					<scale sid="scale">10 10 10</scale>
+					<instance_geometry url="#pCube3_geometry"/>
+				</node>
+			</node>
+		</visual_scene>
+	</library_visual_scenes>
+	<scene>
+		<instance_visual_scene url="#Poser_scene"/>
+	</scene>
+</COLLADA>
