@@ -15,6 +15,7 @@
 		73BFAB36220646FF00A87FCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73BFAB34220646FF00A87FCB /* LaunchScreen.storyboard */; };
 		73BFAB412206470000A87FCB /* Pauline2_African_StarterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BFAB402206470000A87FCB /* Pauline2_African_StarterTests.swift */; };
 		73BFAB4C2206470000A87FCB /* Pauline2_African_StarterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BFAB4B2206470000A87FCB /* Pauline2_African_StarterUITests.swift */; };
+		73F16461220C49BE0042F476 /* SCNNode+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F16460220C49BE0042F476 /* SCNNode+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		73BFAB472206470000A87FCB /* Pauline2-African-StarterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pauline2-African-StarterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73BFAB4B2206470000A87FCB /* Pauline2_African_StarterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pauline2_African_StarterUITests.swift; sourceTree = "<group>"; };
 		73BFAB4D2206470000A87FCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73F16460220C49BE0042F476 /* SCNNode+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNNode+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				73BFAB32220646FF00A87FCB /* Assets.xcassets */,
 				73BFAB34220646FF00A87FCB /* LaunchScreen.storyboard */,
 				73BFAB37220646FF00A87FCB /* Info.plist */,
+				73F16460220C49BE0042F476 /* SCNNode+Extension.swift */,
 			);
 			path = "Pauline2-African-Starter";
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73BFAB2E220646FD00A87FCB /* ViewController.swift in Sources */,
+				73F16461220C49BE0042F476 /* SCNNode+Extension.swift in Sources */,
 				73BFAB2A220646FD00A87FCB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

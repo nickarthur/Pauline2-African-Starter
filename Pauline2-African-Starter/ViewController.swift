@@ -14,16 +14,25 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
     @IBOutlet var sceneView: ARSCNView!
 
   fileprivate func printInfo(for node: SCNNode) {
+    
+    // first print out location of  the current node
     print("**** \(node.name ?? "no name"): at local position: \(node.position)")
     print("**** \(node.name ?? "no name"): at world position: \(node.worldPosition)")
     
-    print("**** \(node.name ?? "no name") parent: \(String(describing: node.parent?.name))")
+    // print the node's parent name
+    print("**** \(node.name ?? "no name") parent: \(node.parent?.name ?? "no parent found")")
     
+    // print out child node info
     var nodeNames: [String] = []
     for node in node.childNodes {
       nodeNames.append(node.name ?? "no name")
     }
     print("**** \(node.name ?? "no name"): has \(node.childNodes.count == 1 ? " \(node.childNodes.count) child" : " \(node.childNodes.count) children"): \(nodeNames)")
+    
+    // recursive call to have children print out thier info
+    for node in node.childNodes {
+      printInfo(for: node)
+    }
 
   }
   
@@ -38,38 +47,11 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
         sceneView.showsStatistics = true
 
         // Create a new scene
-        let scene = SCNScene(named: "art.scnassets/SceneKit Scene.scn")!
-
-        printInfo(for: scene.rootNode)
-
+        let scene = SCNScene(named: "art.scnassets/Bike.dae")!
     
-        if let bodyNode = scene.rootNode.childNode(withName: "Body", recursively: true) {
-          
-          printInfo(for: bodyNode)
-          
-          if let bikeNode = bodyNode.childNode(withName: "Bike", recursively: true) {
-            printInfo(for: bikeNode)
-            for node in bikeNode.childNodes {
-              printInfo(for: node)
-            }
-          }
-//            let scaleFactor = Float(0.001)
-//            // bikeNode.scale = SCNVector3(double3(scaleFactor))
-//            bikeNode.transform = SCNMatrix4(float4x4(rows: [
-//                float4(scaleFactor, 0, 0, 0),
-//                float4(0, scaleFactor, 0, 0),
-//                float4(0, 0, scaleFactor, 0),
-//                float4(2, -1.5, -5, 1.0),
-//            ]))
-
-//            let newRootNode = SCNNode()
-//            newRootNode.name = "myNewRoot"
-//            newRootNode.worldPosition = SCNVector3(0, 0, -10)
-//
-//            scene.rootNode.addChildNode(newRootNode)
-//
-//            newRootNode.addChildNode(bikeNode)
-        }
+        // always name your scene root node
+        scene.rootNode.name = "Bike SCNScene RootNode"
+        printInfo(for: scene.rootNode)
 
         // Set the scene to the view
         sceneView.scene = scene
