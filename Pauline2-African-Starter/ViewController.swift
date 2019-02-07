@@ -28,7 +28,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
 
         // always name your scene root node
         scene.rootNode.name = "Bike SCNScene RootNode"
-        printInfo(for: scene.rootNode)
+        scene.rootNode.printInfo()
 
         // Set the scene to the view
         sceneView.scene = scene
@@ -100,29 +100,5 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
 //    let currentPosition = SCNVector3(translatonRow.x, translatonRow.y, translatonRow.z)
 //    print("**** current position: \(currentPosition)")
     //  }
-}
-
-
-// Mark: - Helpers
-
-fileprivate func printInfo(for node: SCNNode) {
-  // first print out location of  the current node
-  print("**** \(node.name ?? "no name"): at local position: \(node.position)")
-  print("**** \(node.name ?? "no name"): at world position: \(node.worldPosition)")
-  
-  // print the node's parent name
-  print("**** \(node.name ?? "no name") parent: \(node.parent?.name ?? "no parent found")")
-  
-  // print out child node info
-  var nodeNames: [String] = []
-  for node in node.childNodes {
-    nodeNames.append(node.name ?? "no name")
-  }
-  print("**** \(node.name ?? "no name"): has \(node.childNodes.count == 1 ? " \(node.childNodes.count) child" : " \(node.childNodes.count) children"): \(nodeNames)")
-  
-  // recursive call to have children print out thier info
-  for node in node.childNodes {
-    printInfo(for: node)
-  }
 }
 
