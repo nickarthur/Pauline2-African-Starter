@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+	<asset>
+		<contributor>
+			<authoring_tool>Poser 11.1.1.35510</authoring_tool>
+		</contributor>
+		<created>2019-02-09T04:24:38Z</created>
+		<modified>2019-02-09T04:24:38Z</modified>
+		<unit meter="0.009999999776482582" name="Centimeter"/>
+		<up_axis>Y_UP</up_axis>
+	</asset>
+	<library_geometries/>
+	<library_visual_scenes>
+		<visual_scene id="Poser_scene">
+			<node id="Poser_scene_root"/>
+		</visual_scene>
+	</library_visual_scenes>
+	<scene>
+		<instance_visual_scene url="#Poser_scene"/>
+	</scene>
+</COLLADA>
