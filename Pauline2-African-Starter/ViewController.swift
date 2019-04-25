@@ -10,10 +10,28 @@ import ARKit
 import SceneKit
 import UIKit
 
-class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
-    @IBOutlet var sceneView: ARSCNView!
+ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
+  
+  var time = Timer()
 
-    override func viewDidLoad() {
+    @IBOutlet var sceneView: ARSCNView!
+  
+  
+   func loadSceneNode(withName name: String, from sourceScene: SCNScene) -> SCNNode? {
+    if let loadedNode = sourceScene.rootNode.childNode(withName: name, recursively: true) {
+      return loadedNode
+    }
+    return nil
+  }
+  
+  @objc func timer() {
+    let node = sceneView.scene.rootNode.childNode(withName: "BikeSceneRoot", recursively: true)
+    if let node = node {
+      node.isPaused = !node.isPaused
+    }
+  }
+  
+  override func viewDidLoad() {
         super.viewDidLoad()
 
         // Set the view's delegate
@@ -23,23 +41,54 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
         // Show statistics such as fps and timing information
         sceneView.showsStatistics = true
 
-        // Create a new scene
-        let scene = SCNScene(named: "art.scnassets/Bike.dae")!
+        var currentScene = SCNScene()
 
-        // always name your scene root node
-        scene.rootNode.name = "Bike SCNScene RootNode"
-        scene.rootNode.printInfo()
-      
-      if let poserSceneRootNode = scene.rootNode.childNode(withName: "PoserSceneRoot", recursively: true) {
-        poserSceneRootNode.worldPosition = SCNVector3(0, -200, -400)
-        
-        print("**** Poser Scene Moved To:")
-        scene.rootNode.printInfo()
+        // Create a new scene
+    
+    guard let bikeScene = SCNScene(named: "art.scnassets/PERSONAL-YOUNG-TRAINER-STARTER-KIT.dae") else {
+      fatalError("unable to load scene file")
+    }
+        currentScene = bikeScene
+    
+        currentScene.rootNode.printInfo()
+    
+   if let resultNode = currentScene.rootNode.childNode(withName: "Body", recursively: true) {
+      let parentNode = resultNode.parent
+    parentNode?.worldPosition = SCNVector3(0, -2, -3)
+    
+      print("found: \(resultNode.name ?? "no name" )")
+    }
+ 
+    if let resultNode = currentScene.rootNode.childNode(withName: "Bike", recursively: true) {
+      if let parentNode = resultNode.parent {
+        parentNode.worldPosition = SCNVector3(0, -2, -3)
       }
-      
-      
+      print("found: \(resultNode.name ?? "no name" )")
+    }
+    
+//        // always name your scene root node
+//        bikeScene.rootNode.name = "Bike SCNScene RootNode"
+//        // if we cannot load then crash we cannot operate witout a bike
+//        let bikeSceneRootNode = loadSceneNode(withName: "BikeSceneRoot", from: bikeScene)!
+//        bikeSceneRootNode.worldPosition = SCNVector3(0, -100, -400)
+//        bikeSceneRootNode.isPaused = true
+//        currentScene.rootNode.addChildNode(bikeSceneRootNode)
+//
+//        // turn on bike pedals animation after a delay
+//        time = Timer.scheduledTimer(timeInterval: 7, target: self, selector: #selector(timer), userInfo: nil, repeats: true)
+//
+//    if let yogaPantsScene = SCNScene(named: "art.scnassets/Yoga-Pants5-unity.dae") {
+//      if let yogaPantsRootNode = loadSceneNode(withName: "YogaPantsRoot", from: yogaPantsScene) {
+//        currentScene.rootNode.addChildNode(yogaPantsRootNode)
+//        yogaPantsRootNode.worldPosition = SCNVector3(0, -100, -400)
+//      } else {
+//        fatalError("Did you forget to add a 'name' attribute to the node inside the .dae file??")
+//      }
+//    } else {
+//      fatalError("could not load the main character's pants")
+//    }
         // Set the scene to the view
-        sceneView.scene = scene
+        sceneView.scene = currentScene
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -47,7 +96,8 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
 
         // Create a session configuration
         let configuration = ARWorldTrackingConfiguration()
-
+        configuration.isLightEstimationEnabled = false
+      
         // Run the view's session
         sceneView.session.run(configuration)
 
@@ -57,6 +107,12 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
         } else {
             print("**** Camera Position: unknown")
         }
+      
+//        sceneView.pointOfView = sceneView.scene.rootNode.childNode(withName: "FACE_CAMERA", recursively: true)
+      
+      
+      
+      
     }
 
     override func viewWillDisappear(_ animated: Bool) {
